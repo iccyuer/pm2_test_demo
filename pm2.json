@@ -5,7 +5,7 @@
 			"script": "./index.js",
 			"wechat": "true",
 			"node_args": "--harmony",
-			"exec_interpreter": "ndoe",
+			"exec_interpreter": "node",
 			"exec_mode": "fork",
 			"error_file": "error.log",
 			"out_file": "out.log",
