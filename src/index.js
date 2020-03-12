@@ -1,4 +1,5 @@
 var http=require('http');
+import user from './user';
 
 var server=http.createServer(function(request,response){
     response.writeHeader(200,{
@@ -6,6 +7,7 @@ var server=http.createServer(function(request,response){
     });
     response.write('<i>我是一个i标签aaa</i>');
     response.write('吼吼吼');
+    response.write(user.text);
     response.end('hehehehe');
 });
 console.log('test_demo start!')

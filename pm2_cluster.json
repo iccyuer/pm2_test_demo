@@ -1,12 +1,13 @@
 {
 	"apps": [
 		{
-			"name": "test_demo",
+			"name": "test_demo_cluster",
 			"script": "./build/index.js",
 			"wechat": "true",
 			"node_args": "--harmony",
 			"exec_interpreter": "node",
-			"exec_mode": "fork",
+            "instances": 4,
+            "exec_mode": "cluster",
 			"error_file": "error.log",
 			"out_file": "out.log",
 			"pid_file": "express-consign.pid",
